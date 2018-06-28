@@ -11,8 +11,8 @@ h2, ul, .button {
     border: 1px solid black;
 }
 
-button {
-    margin: 4%;
+#btn_pause, #btn_start, #btn_reset {
+    margin: 2em 0;
 }
 
 li {

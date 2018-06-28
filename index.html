@@ -6,7 +6,7 @@
     <title>Kanban Pomodoro</title>
 
     <!---CSS--->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="node_modules/flipclock/dist/flipclock.css">
     <link rel="stylesheet" href="CSS/style.css" />
 </head>
@@ -30,21 +30,29 @@
                 </ul>
             </div>
             <div class="col-12 col-lg-4">
-                <h2>En cours</h2>
-                <div class="clock"></div>
+                <div class="row">
+                    <div class="col-12">
+
+                        <h2>En cours</h2>
+                        <div class="clock"></div>
+                    </div>
+                </div>
                 <!--Timer-->
                 <div class="row ">
-                    <div class="col-12">
-                        <button type="button" class="btn btn-outline-secondary">Début</button>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-secondary" id="btn_start">Début</button>
                     </div>
-                    <div class="col-12">
-                        <button type="button" class="btn btn-outline-secondary">Pause</button>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-secondary" id="btn_pause">Pause</button>
+                    </div>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-outline-secondary" id="btn_reset">Pause</button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
                 <h2> Fait</h2>
-                <ul>
+                <ul >
                     <li>
                         Tâches 1
                     </li>
@@ -63,7 +71,7 @@
 
     <!---JS--->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="node_modules/sortablejs/Sortable.min.js"></script>
     <script src="node_modules/flipclock/dist/flipclock.min.js"></script>
     <script src="JS/script.js"></script>

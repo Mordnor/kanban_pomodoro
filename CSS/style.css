@@ -1,0 +1,30 @@
+.main {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2, ul, .button {
+    border: 1px solid black;
+}
+
+button {
+    margin: 4%;
+}
+
+li {
+    list-style-type: none;
+    text-align: left;
+    line-height: 5;
+    margin: 2% 0;
+    padding-left: 2%;
+}
+
+li:hover {
+    background-color: #eeeeee;
+    width: 85%;
+    border-radius: 15px;
+}

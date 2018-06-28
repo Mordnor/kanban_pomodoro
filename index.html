@@ -15,18 +15,18 @@
     <h1>Kanban Pomodoro</h1>
     <div class="container">
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Nouvelle tâche" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <input type="text" class="form-control addText" placeholder="Nouvelle tâche" aria-label="Recipient's username" aria-describedby="basic-addon2">
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button">Ajouter</button>
+                <button class="btn btn-outline-secondary" type="button" id="add">Ajouter</button>
             </div>
         </div>
         <div class="row main">
             <div class="col-12 col-lg-4">
                 <h2> A faire</h2>
                 <ul id="items">
-                    <li>Tâches 3</li>
-                    <li>Tâches 4</li>
-                    <li>Tâches 5</li>
+                    <li class="toDo">Tâches 3<i class='remove'> ✖ </i></li>
+                    <li class="toDo">Tâches 4<i class='remove'> ✖ </i></li>
+                    <li class="toDo">Tâches 5<i class='remove'> ✖ </i></li>
                 </ul>
             </div>
             <div class="col-12 col-lg-4">
@@ -46,7 +46,7 @@
                         <button type="button" class="btn btn-outline-secondary" id="btn_pause">Pause</button>
                     </div>
                     <div class="col-4">
-                        <button type="button" class="btn btn-outline-secondary" id="btn_reset">Pause</button>
+                        <button type="button" class="btn btn-outline-secondary" id="btn_reset">Reset</button>
                     </div>
                 </div>
             </div>

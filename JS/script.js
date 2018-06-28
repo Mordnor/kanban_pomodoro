@@ -1,4 +1,23 @@
 // Drag and Drop Function
+$(document).ready(function(){
+
+ function supp() {
+   $(".remove").click(function(event) {
+     $(this).parents('li').remove();
+   });
+};
+
+
+supp()
+
+$("#add").click(function(event) {
+var task = $(".addText").val()
+console.log(task);
+$("<li class='toDo'>" + task + "<i class='remove'> ✖ </i>" +  "</li>").appendTo('#items')
+supp()
+});
+});
+
 var el = document.getElementById('items');
 var sortable = Sortable.create(el);
 
@@ -27,4 +46,5 @@ $(document).ready(function(){
     btn_reset.click(function(){
         clock.reset();
     })
+
 });

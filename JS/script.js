@@ -25,13 +25,15 @@ var sortable = Sortable.create(el);
 
 $(document).ready(function() {
     // Timer Countdown
-    var clock = $('.clock').FlipClock(4, {
+    var clock = $('.clock').FlipClock(1499, {
         autoStart: false,
         clockFace: 'MinuteCounter',
         onInterval: function() {
             if (this.getFaceValue() == 0) {
                 console.log($(".toDo")[0]);
                 $("#done").append($(".toDo")[0]);
+                clock.stop();
+                clock.setFaceValue(0);
             }
         }
 
